@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datatables Plugins</title>
+  <!-- css -->
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+  <link rel="stylesheet" href=" https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
+</head>
+<body>
+  <div class="container ">
+    <h1 class="text-center mb-5">Membuat table buku dengan Datatables Plugins</h1>
+    <table id="tableBuku" class="table table-striped table-bordered" >
+				<thead>
+					<tr>
+						<td><b>Product Name</b></td>
+						<td><b>Status</b></td>
+						<td><b>Date</b></td>
+						<td><b>Licence</b></td>
+						<td><b>Description</b></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><a href="http://dev.educollabs.org/simpro/" target="_blank">SIM Pro</a></td>
+						<td>Release</td>
+						<td>1/5/2023</td>
+						<td>GNU/GPL & CC-SA-4.0</td>
+						<td>SIM Pro is software for submitting research proposals for students in the higher education environment.</td>
+					</tr>
+					<tr>
+						<td><a href="http://journal.educollabs.org" target="_blank">JMTT Publisher</a></td>
+						<td>Release</td>
+						<td>4/18/2022</td>
+						<td>CC-NC-SA-4.0</td>
+						<td>JMTT is a platform for research publications in the form of scientific journals. This product is a customization of the modified Open Journal System (OJS) platform.</td>
+					</tr>
+					<tr class="warning">
+						<td><a href="http://dev.educollabs.org/institute/" target="_blank">Kampus Bersama</a></td>
+						<td>Pending</td>
+						<td>8/25/2022</td>
+						<td>GNU/GPL</td>
+						<td>The "Kampus Bersama" program is a digital-based educational institution platform. The results of LMS and MOOC developments are used as learning media by adopting the shameless/smart model.</td>
+					</tr>
+					<tr class="warning">
+						<td><a href="http://dev.educollabs.org/ets/" target="_blank">ETS Employee Test System</a></td>
+						<td>Update Version</td>
+						<td>11/5/2022</td>
+						<td>GNU/GPL</td>
+						<td>ETS or Employee Test System is a platform that can be used by the personnel department, which aims to manage employee assessments in terms of promotion, recruitment process, employee eligibility and others.</td>
+					</tr>
+					<tr class="warning">
+						<td><a href="http://dev.educollabs.org/disc/" target="_blank">DISC Psikotest</a></td>
+						<td>Update Version</td>
+						<td>6/9/2019</td>
+						<td>GNU/GPL</td>
+						<td>DISC Psikotest is an assessment platform based on Dominant, Influence, Steadiness, and Compliance models. The purpose of this assessment is to create a group consisting of the DISC.</td>
+					</tr>
+					<tr>
+						<td><a href="http://dev.educollabs.org/uitest/" target="_blank">UI Tester</a></td>
+						<td>Release</td>
+						<td>10/28/2018</td>
+						<td>Free</td>
+						<td>UI Tester is a tool for testing website appearance on various platforms. The goal is for website designers to understand the responsibility of design so that it is easily accessible to users.</td>
+					</tr>
+					<tr>
+						<td><a href="http://journal.educollabs.org" target="_blank">JMTT Publisher</a></td>
+						<td>Release</td>
+						<td>4/18/2022</td>
+						<td>CC-NC-SA-4.0</td>
+						<td>JMTT is a platform for research publications in the form of scientific journals. This product is a customization of the modified Open Journal System (OJS) platform.</td>
+					</tr>
+					<tr class="warning">
+						<td><a href="http://dev.educollabs.org/institute/" target="_blank">Kampus Bersama</a></td>
+						<td>Pending</td>
+						<td>8/25/2022</td>
+						<td>GNU/GPL</td>
+						<td>The "Kampus Bersama" program is a digital-based educational institution platform. The results of LMS and MOOC developments are used as learning media by adopting the shameless/smart model.</td>
+					</tr>
+					<tr class="warning">
+						<td><a href="http://dev.educollabs.org/ets/" target="_blank">ETS Employee Test System</a></td>
+						<td>Update Version</td>
+						<td>11/5/2022</td>
+						<td>GNU/GPL</td>
+						<td>ETS or Employee Test System is a platform that can be used by the personnel department, which aims to manage employee assessments in terms of promotion, recruitment process, employee eligibility and others.</td>
+					</tr>
+					<tr class="warning">
+						<td><a href="http://dev.educollabs.org/disc/" target="_blank">DISC Psikotest</a></td>
+						<td>Update Version</td>
+						<td>6/9/2019</td>
+						<td>GNU/GPL</td>
+						<td>DISC Psikotest is an assessment platform based on Dominant, Influence, Steadiness, and Compliance models. The purpose of this assessment is to create a group consisting of the DISC.</td>
+					</tr>
+					<tr>
+						<td><a href="http://dev.educollabs.org/uitest/" target="_blank">UI Tester</a></td>
+						<td>Release</td>
+						<td>10/28/2018</td>
+						<td>Free</td>
+						<td>UI Tester is a tool for testing website appearance on various platforms. The goal is for website designers to understand the responsibility of design so that it is easily accessible to users.</td>
+					</tr>
+				</tbody>
+    </table>
+  </div>
+  <!-- script -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src=" https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+  <script src=" https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+</body>
+<script>
+    $(document).ready(function() {
+      $('#tableBuku').DataTable();
+  } );
+ </script>
+</html>
